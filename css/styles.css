@@ -130,6 +130,11 @@ p{margin:0 0 1em;color:var(--ink-soft);max-width:62ch;}
   display:flex;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);
 }
 .brand-mark img{height:48px;width:48px;object-fit:contain;display:block;}
+.brand-text{line-height:1.2;min-width:0;}
+.brand-text strong{
+  display:block;font-family:var(--font-head);color:#fff;font-size:1rem;letter-spacing:.01em;
+  white-space:nowrap;
+}
 
 .nav-links{display:flex;align-items:center;gap:4px;}
 .nav-links a{
@@ -257,4 +262,8 @@ html[data-theme="dark"] .theme-toggle .toggle-label::after{content:"Light mode";
   }
   .nav-toggle{display:flex;align-items:center;justify-content:center;}
   .section{padding:64px 0;}
+}
+
+@media (max-width: 380px){
+  .brand-text strong{font-size:.85rem;white-space:normal;line-height:1.15;}
 }
